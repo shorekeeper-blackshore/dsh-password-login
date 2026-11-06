@@ -1,0 +1,48 @@
+{
+  "name": "dsh-password-login",
+  "version": "1.0.0",
+  "description": "Password login for the DSH (DeepSeek Harness) web UI: a themed login page, a signed session cookie, and a settings section inside DSH itself.",
+  "type": "module",
+  "license": "MIT",
+  "author": "shorekeeper-blackshore",
+  "homepage": "https://github.com/shorekeeper-blackshore/dsh-password-login#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shorekeeper-blackshore/dsh-password-login.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shorekeeper-blackshore/dsh-password-login/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek",
+    "deepseek-harness",
+    "plugin",
+    "password",
+    "login",
+    "auth",
+    "web"
+  ],
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js"
+  },
+  "bin": {
+    "dsh-passwd": "./bin/dsh-passwd.mjs"
+  },
+  "files": [
+    "lib",
+    "bin",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web"
+    }
+  }
+}
